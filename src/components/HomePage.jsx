@@ -35,49 +35,49 @@ const HomePage = () => {
       )}
       <h3 className="text-center mt-4 text-body-tertiary">Meteo Città Italiane</h3>
       <Row>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Milan"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Rome"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Florence"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Catania"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Sassari"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Venice"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Bari"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Naples"} />
         </Col>
       </Row>
       <h3 className="text-center mt-4 text-body-tertiary">Meteo Città Europee</h3>
       <Row>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"London"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Madrid"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Paris"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Berlin"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Oslo"} />
         </Col>
-        <Col md={6}>
+        <Col lg={6}>
           <SingleCard cityProp={"Lugano"} />
         </Col>
       </Row>
