@@ -1,10 +1,12 @@
-import { Col, Container, Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import SingleCard from "./SingleCard";
 
 const Regions = () => {
   return (
     <Container>
-      <h3 className="text-center mt-4">Meteo Delle Regioni Italiane</h3>
+      <h3 className="text-center mt-4 text-body-tertiary">Meteo Delle Regioni Italiane</h3>
       <Row>
         <Col md={6} className="h-110">
           <SingleCard cityProp={"Abruzzo"} />

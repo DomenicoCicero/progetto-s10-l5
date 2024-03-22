@@ -1,6 +1,8 @@
-import { Button, Container, Row } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 import SingleCard from "./SingleCard";
 import { useState } from "react";
 
@@ -31,7 +33,7 @@ const HomePage = () => {
           </Col>
         </Row>
       )}
-      <h3 className="text-center mt-4">Meteo Città Italiane</h3>
+      <h3 className="text-center mt-4 text-body-tertiary">Meteo Città Italiane</h3>
       <Row>
         <Col md={6}>
           <SingleCard cityProp={"Milan"} />
@@ -58,7 +60,7 @@ const HomePage = () => {
           <SingleCard cityProp={"Naples"} />
         </Col>
       </Row>
-      <h3 className="text-center mt-4">Meteo Città Europee</h3>
+      <h3 className="text-center mt-4 text-body-tertiary">Meteo Città Europee</h3>
       <Row>
         <Col md={6}>
           <SingleCard cityProp={"London"} />

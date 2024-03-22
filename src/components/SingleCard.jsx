@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Spinner } from "react-bootstrap";
+import Spinner from "react-bootstrap/Spinner";
+import { Link } from "react-router-dom";
 
 const SingleCard = props => {
   const [city, setCity] = useState(null);
@@ -14,7 +15,6 @@ const SingleCard = props => {
         }
       })
       .then(city => {
-        console.log(city);
         setCity(city);
       })
       .catch(error => {
@@ -35,16 +35,18 @@ const SingleCard = props => {
         </div>
       )}
       {city && (
-        <div className="d-flex align-items-center border border border-primary justify-content-between bg-primary my-1">
-          <h3 className="text-white ms-2 me-1">{city.name}</h3>
-          <div>
-            <span className="me-5 fw-semibold text-white">{city.main.temp}°F</span>
-            <span className="me-2 text-white">min/max:</span>
-            <span className="me-2 fw-semibold text-white">
-              {city.main.temp_min}°F/{city.main.temp_max}°F
-            </span>
+        <Link to={`/city/${city.name}`} className="text-decoration-none text-white nav-link">
+          <div className="d-flex align-items-center border border border-primary justify-content-between bg-primary my-1">
+            <h3 className="text-white ms-2 me-1">{city.name}</h3>
+            <div>
+              <span className="me-5 fw-semibold text-white">{city.main.temp}°F</span>
+              <span className="me-2 text-white">min/max:</span>
+              <span className="me-2 fw-semibold text-white">
+                {city.main.temp_min}°F/{city.main.temp_max}°F
+              </span>
+            </div>
           </div>
-        </div>
+        </Link>
       )}
     </>
   );
